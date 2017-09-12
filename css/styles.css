@@ -1,0 +1,44 @@
+/* =========================================================
+	BASE
+	========================================================= */
+
+/* VARIABLES */
+
+:root {
+	--base-font-family: "Sourse Sans Pro", sans-serif;
+	--alternate-font-family: "Lora", serif;
+	--base-font-size: 16px;
+	--site-padding: 15px;
+}
+
+/* SETUP */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: var(--base-font-family);
+	font-size: var(--base-font-size);
+	color: ;
+	background-color: #fff;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* =========================================================
+	MODULE
+	========================================================= */
+
+/* =========================================================
+	LAYOUT
+	========================================================= */
