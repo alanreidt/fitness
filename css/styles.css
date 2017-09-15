@@ -5,10 +5,12 @@
 /* VARIABLES */
 
 :root {
-	--base-font-family: "Sourse Sans Pro", sans-serif;
+	--base-font-family: "Source Sans Pro", sans-serif;
 	--alternate-font-family: "Lora", serif;
 	--base-font-size: 16px;
 	--site-padding: 15px;
+	--nav-height: 90px;
+	--int-elem-padding: 15px;
 }
 
 /* SETUP */
@@ -25,6 +27,7 @@ html {
 
 body {
 	margin: 0;
+
 	font-family: var(--base-font-family);
 	font-size: var(--base-font-size);
 	color: ;
@@ -62,10 +65,108 @@ img {
 	overflow: hidden;
 }
 
+/* CLEARFIX */
+
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
 /* =========================================================
 	MODULE
 	========================================================= */
 
+/* NAVIGATION */
+
+.nav {
+	font-size: 0;
+}
+
+.nav__container {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style-type: none;
+}
+
+.nav__item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nav__link {
+	display: block; /* removes gap (or use vertical-align instead) */
+
+	font-size: 24px;
+	font-weight: 300;
+	color: #999;
+	letter-spacing: 0.6px;
+	text-decoration: none;
+	text-transform: capitalize;
+
+	-webkit-transition: color .4s ease-in-out;
+			  transition: color .4s ease-in-out;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+	color: #000;
+}
+
+/* LOGO */
+
+a.logo {
+	text-decoration: none;
+}
+
+h1.logo {
+	cursor: default;
+}
+
+.logo {
+	margin: 0;
+
+	font-size: 36px;
+	font-weight: 600;
+	color: #505050;
+}
+
+
 /* =========================================================
 	LAYOUT
 	========================================================= */
+
+/* TOPLINE */
+
+.topline {
+	position: fixed;
+	z-index: 800;
+	top: 0; left: 0;
+	width: 100%;
+
+	height: var(--nav-height);
+	background-color: #fff;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+}
+
+.topline__logo {
+	float: left;
+	padding-top: 25px;
+
+	margin-left: calc(-1 * var(--int-elem-padding));
+	padding-right: var(--int-elem-padding);
+	padding-left: var(--int-elem-padding);
+}
+
+.topline__nav {
+	float: right;
+	margin-right: calc(-1 * var(--int-elem-padding));
+	line-height: var(--nav-height);
+}
+
+.topline__nav .nav__link {
+	padding-right: var(--int-elem-padding);
+	padding-left: var(--int-elem-padding);
+}
