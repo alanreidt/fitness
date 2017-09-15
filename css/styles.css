@@ -1,3 +1,5 @@
+/*line-height*/
+
 /* =========================================================
 	BASE
 	========================================================= */
@@ -76,6 +78,55 @@ img {
 /* =========================================================
 	MODULE
 	========================================================= */
+
+/* PAGE */
+
+.page__contents {
+	/*padding-top: var(--nav-height);*/
+}
+
+.page__title {
+	font-size: 30px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+/* BUTTON */
+
+a.button {
+	text-decoration: none;
+}
+
+button.button {
+	font-family: inherit;
+	cursor: pointer;
+}
+
+.button {
+	display: inline-block;
+	vertical-align: middle;
+
+	padding: 16px 38px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.4;
+	letter-spacing: 4px;
+	color: #fff;
+	background-color: #26253a;
+	text-transform: uppercase;
+
+	-webkit-transition: color .4s ease-in-out,
+							  background-color .4s ease-in-out;
+			  transition: color .4s ease-in-out,
+							  background-color .4s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+	color: #26253a;
+	background-color: #fff;
+}
+
 
 /* NAVIGATION */
 
@@ -169,4 +220,47 @@ h1.logo {
 .topline__nav .nav__link {
 	padding-right: var(--int-elem-padding);
 	padding-left: var(--int-elem-padding);
+}
+
+/* HERO */
+
+.hero {
+	display: table;
+	width: 100%;
+	height: 100vh;
+
+	background: url(../img/bg-hero-1.jpg) #0c0c0c no-repeat center / cover;
+}
+
+.hero__content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+	color: #fff;
+}
+
+.hero__prelude {
+	margin-top: 0;
+	margin-bottom: 30px;
+
+	font-family: var(--alternate-font-family);
+	font-size: 24px;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 36px;
+	letter-spacing: 2px;
+}
+
+.hero__title {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 45px;
+	font-weight: 600;
+	line-height: 65px;
+	letter-spacing: 10px;
+}
+
+.hero__button {
+	color: #999;
 }
