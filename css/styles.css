@@ -40,8 +40,9 @@ img {
 
 /* COMMON STYLES */
 
+/* %container */
+
 .container {
-	max-width: 1170px;
 	margin: auto;
 	padding-right: var(--site-padding);
 	padding-left: var(--site-padding);
@@ -77,11 +78,13 @@ img {
 	MODULE
 	========================================================= */
 
-/* PAGE */
+/* CONTAINER */
 
-.page__contents {
-	/*padding-top: var(--nav-height);*/
+.container {
+	max-width: 1170px;
 }
+
+/* PAGE */
 
 .page__title {
 	font-size: 30px;
@@ -145,7 +148,10 @@ button.button {
 }
 
 .nav__link {
-	display: block; /* removes gap (or use vertical-align instead) */
+	display: inline-block;
+
+	/* removes gap */
+	vertical-align: middle;
 
 	font-size: 24px;
 	font-weight: 300;
