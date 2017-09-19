@@ -96,6 +96,7 @@ img {
 
 .page__desc {
 	font-size: 20px;
+	font-weight: 300;
 	line-height: 1.25;
 	letter-spacing: 0.4px;
 	color: #707070;
@@ -274,10 +275,8 @@ h1.logo {
 }
 
 .hero__title {
-	margin-top: 0;
 	margin-bottom: 40px;
 	font-size: 45px;
-	font-weight: 600;
 	line-height: 65px;
 	letter-spacing: 10px;
 }
