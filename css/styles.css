@@ -30,7 +30,6 @@ body {
 
 	font-family: var(--base-font-family);
 	font-size: var(--base-font-size);
-	color: ;
 	background-color: #fff;
 }
 
@@ -87,9 +86,27 @@ img {
 /* PAGE */
 
 .page__title {
+	margin-top: 0;
 	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.15;
 	letter-spacing: 6px;
 	text-transform: uppercase;
+}
+
+.page__desc {
+	font-size: 20px;
+	line-height: 1.25;
+	letter-spacing: 0.4px;
+	color: #707070;
+}
+
+.page__paragraph {
+	margin: 0;
+}
+
+.page__paragraph:not(:last-child) {
+	margin-bottom: 10px;
 }
 
 /* BUTTON */
