@@ -30,7 +30,7 @@ body {
 
 	font-family: var(--base-font-family);
 	font-size: var(--base-font-size);
-	background-color: #fff;
+	background-color: #999;
 }
 
 img {
@@ -87,11 +87,18 @@ img {
 
 .page__title {
 	margin-top: 0;
+	margin-bottom: 30px;
+
 	font-size: 30px;
 	font-weight: 600;
 	line-height: 1.15;
 	letter-spacing: 6px;
+	color: #fff;
 	text-transform: uppercase;
+}
+
+.page__title_dark {
+	color: #333;
 }
 
 .page__desc {
@@ -108,6 +115,29 @@ img {
 
 .page__paragraph:not(:last-child) {
 	margin-bottom: 10px;
+}
+
+.page__link {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.page__link:hover,
+.page__link:focus {
+	color: #23527c;
+}
+
+/* SLIDE GRID */
+
+.slide-grid::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.slide-grid__item {
+	float: left;
+	width: 50%;
 }
 
 /* BUTTON */
@@ -266,16 +296,13 @@ h1.logo {
 	margin-top: 0;
 	margin-bottom: 30px;
 
-	font-family: var(--alternate-font-family);
-	font-size: 24px;
-	font-weight: 700;
-	font-style: italic;
-	line-height: 36px;
+	font: italic normal 700 24px/1.5 var(--alternate-font-family);
 	letter-spacing: 2px;
 }
 
 .hero__title {
 	margin-bottom: 40px;
+
 	font-size: 45px;
 	line-height: 65px;
 	letter-spacing: 10px;
@@ -283,4 +310,68 @@ h1.logo {
 
 .hero__button {
 	color: #999;
+}
+
+/* OVERVIEW */
+
+.overview {
+	padding-top: 140px;
+	padding-bottom: 140px;
+	background-color: #fff;
+}
+
+.overview__img-wrapper {
+	position: relative;
+	z-index: 200;
+
+	padding-right: 15px;
+	padding-bottom: 60px;
+}
+
+.overview__img {
+	padding: 20px 20px 40px;
+	border: 4px solid #f9f9f9;
+
+	/* removes gap */
+	vertical-align: middle;
+}
+
+.overview__img-label {
+	position: absolute;
+	z-index: 200;
+	bottom: 0; left: 80px;
+
+	margin: 0;
+	padding: 60px 50px;
+
+	font: italic normal 700 20px/1.4 var(--alternate-font-family);
+	word-spacing: 1px;
+	letter-spacing: 1px;
+	color: #333;
+	background-color: #fff;
+	border-left: 8px solid #26253a;
+	box-shadow: 0px 2px 8px 10px rgba(50, 50, 50, 0.04);
+}
+
+.overview__content {
+	padding: 60px 9% 0;
+}
+
+.overview__button-wrapper {
+	margin-top: 40px;
+}
+
+.overview__button {
+	padding: 14px 46px;
+
+	font-size: 22px;
+	color: #333;
+	background-color: transparent;
+	border: 4px solid #26253a;
+}
+
+.overview__button:hover,
+.overview__button:focus {
+	color: #fff;
+	background-color: #26253a;
 }
