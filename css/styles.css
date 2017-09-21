@@ -41,7 +41,8 @@ img {
 
 /* %container */
 
-.container {
+.container,
+.newsletter__container {
 	margin: auto;
 	padding-right: var(--site-padding);
 	padding-left: var(--site-padding);
@@ -197,6 +198,7 @@ button.button {
 	letter-spacing: 4px;
 	color: #fff;
 	background-color: #26253a;
+	border: none;
 	text-transform: uppercase;
 
 	-webkit-transition: color .4s ease-in-out,
@@ -211,6 +213,45 @@ button.button {
 	background-color: #fff;
 }
 
+/* SUBSCRIPTION FORM */
+
+.subscription-form__input {
+	display: block;
+	width: 100%;
+	padding: 8px 12px;
+
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #555;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #999;
+
+	-webkit-transition: border 0.4s ease-in-out;
+	transition: border 0.4s ease-in-out;
+}
+
+.subscription-form__input:focus {
+	border-bottom-color: #fff;
+}
+
+.subscription-form__input::-webkit-input-placeholder {
+	color: #999;
+}
+
+.subscription-form__input:-ms-input-placeholder {
+	color: #999;
+}
+
+.subscription-form__input::-moz-placeholder {
+	opacity: 1;
+}
+
+.subscription-form__input::placeholder {
+	color: #999;
+}
 
 /* NAVIGATION */
 
@@ -484,7 +525,7 @@ h1.logo {
 	position: relative;
 	z-index: 200;
 
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .trainer__img {
@@ -551,4 +592,29 @@ h1.logo {
 	text-align: center;
 }
 
-/*  */
+/* NEWSLETTER */
+
+.newsletter {
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+	background: url(../img/bg-newsletter.jpg) #26253a no-repeat center / cover fixed;
+}
+
+.newsletter__container {
+	max-width: 780px;
+}
+
+.newsletter__header {
+	margin-bottom: 40px;
+}
+
+.newsletter__button-wrapper {
+	margin-top: 60px;
+	text-align: center;
+}
+
+.newsletter__button {
+	width: 45%;
+	height: 65px;
+}
