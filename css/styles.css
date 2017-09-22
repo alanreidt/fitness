@@ -387,7 +387,7 @@ h1.logo {
 
 	height: var(--nav-height);
 	background-color: #fff;
-	border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+	border-bottom: 1px solid #f0f0f0;
 }
 
 .topline__logo {
@@ -515,7 +515,7 @@ h1.logo {
 /* TRAINERS */
 
 .trainers {
-	padding-top: 100px;
+	padding-top: 120px;
 	padding-bottom: 100px;
 
 	background-color: #fff;
@@ -595,7 +595,7 @@ h1.logo {
 /* NEWSLETTER */
 
 .newsletter {
-	padding-top: 120px;
+	padding-top: 140px;
 	padding-bottom: 120px;
 
 	background: url(../img/bg-newsletter.jpg) #26253a no-repeat center / cover fixed;
@@ -617,4 +617,104 @@ h1.logo {
 .newsletter__button {
 	width: 45%;
 	height: 65px;
+}
+
+/* BLOG */
+
+.blog {
+	padding-top: 120px;
+	padding-bottom: 100px;
+
+	background-color: #fff;
+}
+
+.blog__row:not(:last-of-type) {
+	margin-bottom: 40px;
+}
+
+/**
+ * 1.A background-size: 0; property allows to download the image
+ *	during an initial page load. Not when the element is hovering over.
+ */
+
+.blog-entry {
+	padding: 60px;
+
+	color: #606060;
+	background: url(../img/bg-blog-3.jpg) #fff no-repeat top / 0; /* 1 */
+	border: 1px solid #f0f0f0;
+
+	-webkit-transition: background-position 1s linear,
+							  background-color 0.4s ease-in-out;
+			  transition: background-position 1s linear,
+							  background-color 0.4s ease-in-out;
+}
+
+.blog-entry:hover,
+.blog-entry:focus {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-size: cover;
+	background-position: center;
+}
+
+.blog-entry:hover .blog-entry__details,
+.blog-entry:focus .blog-entry__details {
+	color: #fff;
+}
+
+.blog-entry:hover .page__link,
+.blog-entry:focus .page__link {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.blog-entry:hover .page__link:hover,
+.blog-entry:focus .page__link:focus {
+	text-decoration: none;
+}
+
+.blog-entry__details {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 20px;
+
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.4;
+	color: #999;
+}
+
+.blog-entry__topic {
+	text-transform: capitalize;
+}
+
+.blog-entry__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	font: italic normal 700 24px/1.5 var(--alternate-font-family);
+}
+
+.blog-entry__title_affirmative {
+	text-transform: capitalize;
+}
+
+.blog-entry__link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.blog-entry__author {
+	display: block;
+	margin: 0;
+
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.15;
+	letter-spacing: 1px;
+}
+
+.blog-entry__author a {
+	text-transform: capitalize;
 }
