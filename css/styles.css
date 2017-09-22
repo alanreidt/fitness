@@ -544,9 +544,9 @@ h1.logo {
 	width: 100%;
 	height: 100%;
 
-	background-color: #25263a;
-	color: #fff;
 	opacity: 0;
+	color: #fff;
+	background-color: #25263a;
 
 	-webkit-transition: opacity 0.4s ease-in-out,
 							  transform 0.4s ease-in-out;
@@ -559,8 +559,8 @@ h1.logo {
 	opacity: 0.9;
 
 	-webkit-transform: scale(0.9);
-	-ms-transform: scale(0.9);
-	transform: scale(0.9);
+		 -ms-transform: scale(0.9);
+			  transform: scale(0.9);
 }
 
 .img-label__content {
@@ -568,11 +568,11 @@ h1.logo {
 	z-index: 200;
 	top: 50%; left: 50%;
 
+	text-align: center;
+
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-
-	text-align: center;
 }
 
 .trainer__name {
@@ -717,4 +717,124 @@ h1.logo {
 
 .blog-entry__author a {
 	text-transform: capitalize;
+}
+
+/* PLANS */
+
+:root {
+	--price-wrapper-diameter: 120px;
+}
+
+.plans {
+	padding-top: 120px;
+	padding-bottom: 100px;
+
+	background: url(../img/bg-plans.jpg) #0c0c0c no-repeat center / cover fixed;
+}
+
+.plan {
+	padding: 40px;
+
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #666;
+	text-align: center;
+
+	-webkit-transition: color 0.4s ease-in-out,
+							  background-color 0.4s ease-in-out;
+			  transition: color 0.4s ease-in-out,
+							  background-color 0.4s ease-in-out;
+}
+
+.plan:hover,
+.plan:focus {
+	color: #444;
+	background-color: #fff;
+	border-color: transparent;
+}
+
+.plan:hover .plan__price,
+.plan:focus .plan__price {
+	background-color: #222;
+}
+
+.plan:hover .plan__button,
+.plan:focus .plan__button {
+	opacity: 1;
+
+	-webkit-transform: translate3d(0, 0, 0);
+		 -ms-transform: translate3d(0, 0, 0);
+			  transform: translate3d(0, 0, 0);
+}
+
+.plan__name {
+	margin: 0;
+
+	font: italic normal 700 40px/1.5 var(--alternate-font-family);
+	text-transform: capitalize;
+}
+
+.plan__price-wrapper {
+	margin: 30px 0;
+
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.plan__price {
+	display: inline-block;
+
+	width: var(--price-wrapper-diameter);
+	height: var(--price-wrapper-diameter);
+	line-height: var(--price-wrapper-diameter);
+
+	background-color: #26253a;
+	border-radius: 50%;
+
+	-webkit-transition: background-color 0.4s ease-in-out;
+			  transition: background-color 0.4s ease-in-out;
+}
+
+.plan__desc {
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.plan__item {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.6;
+	letter-spacing: 0.6px;
+	text-transform: capitalize;
+}
+
+.plan__button-wrapper {
+	margin-top: 40px;
+}
+
+.plan__button {
+	display: block;
+	padding: 18px 48px;
+
+	opacity: 0;
+	letter-spacing: 3px;
+
+	-webkit-transform: translate3d(0, -15px, 0);
+		 -ms-transform: translate3d(0, -15px, 0);
+			  transform: translate3d(0, -15px, 0);
+
+	-webkit-transition: opacity 0.4s ease-in-out,
+							  transform 0.4s ease-in-out,
+							  background-color 0.4s ease-in-out;
+			  transition: opacity 0.4s ease-in-out,
+							  transform 0.4s ease-in-out,
+							  background-color 0.4s ease-in-out;
+}
+
+.plan__button:hover,
+.plan__button:focus {
+	color: #fff;
+	background-color: #222;
 }
