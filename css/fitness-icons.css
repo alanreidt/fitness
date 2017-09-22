@@ -13,6 +13,8 @@
 	speak: none;
 
 	display: inline-block;
+	vertical-align: baseline;
+
 	text-decoration: inherit;
 	text-align: center;
 
