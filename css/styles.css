@@ -39,6 +39,10 @@ img {
 
 /* COMMON STYLES */
 
+.spacer {
+	height: 600px;
+}
+
 /* %container */
 
 .container,
@@ -253,6 +257,31 @@ button.button {
 	color: #999;
 }
 
+/* SCHEDULE */
+
+.schedule__daytime {
+	display: block;
+	margin-bottom: 10px;
+
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.15;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+.schedule__period {
+	display: block;
+	margin: 0;
+
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.15;
+	letter-spacing: 2px;
+	color: #999;
+	text-transform: uppercase;
+}
+
 /* NAVIGATION */
 
 .nav {
@@ -316,7 +345,7 @@ h1.logo {
 
 :root {
 	--slider-nav-dot-diameter: 12px;
-	--slider-nav-position: 10px;
+	--slider-nav-position: 0px;
 	--slider-nav-gap: 55px;
 }
 
@@ -456,6 +485,8 @@ h1.logo {
 	height: var(--nav-height);
 	background-color: #fff;
 	border-bottom: 1px solid #f0f0f0;
+
+	box-sizing: content-box;
 }
 
 .topline__logo {
@@ -948,4 +979,52 @@ h1.logo {
 	color: #999;
 	letter-spacing: 2px;
 	text-transform: capitalize;
+}
+
+/* FOOTER */
+
+.footer {
+	padding-top: 100px;
+	padding-bottom: 80px;
+
+	background-color: #25263a;
+}
+
+.footer__copyright {
+	margin-top: 80px;
+	margin-bottom: 0;
+
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+	color: #707070;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.footer__link {
+	color: inherit;
+	text-decoration: none;
+
+	-webkit-transition: color 0.4s ease-in-out;
+			  transition: color 0.4s ease-in-out;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+	color: #fff;
+}
+
+.footer-schedules {
+	display: table;
+	margin: auto;
+}
+
+.footer__schedule {
+	padding-top: 20px;
+}
+
+.footer__schedule .schedule__item:not(:last-child) {
+	margin-bottom: 30px;
 }
