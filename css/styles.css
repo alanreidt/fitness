@@ -5,8 +5,8 @@
 /* VARIABLES */
 
 :root {
-	--base-font-family: "Source Sans Pro", sans-serif;
-	--alternate-font-family: "Lora", serif;
+	--main-font-family: "Source Sans Pro", sans-serif;
+	--secondary-font-family: "Lora", serif;
 	--base-font-size: 16px;
 	--site-padding: 15px;
 	--nav-height: 90px;
@@ -28,7 +28,7 @@ html {
 body {
 	margin: 0;
 
-	font-family: var(--base-font-family);
+	font-family: var(--main-font-family);
 	font-size: var(--base-font-size);
 	background-color: #fff;
 }
@@ -60,7 +60,7 @@ img {
 .blog-entry__title,
 .plan__name,
 .testimonial__content {
-	font: italic normal 700 24px/1.5 var(--alternate-font-family);
+	font: italic normal 700 24px/1.5 var(--secondary-font-family);
 }
 
 /* %capitalized */
