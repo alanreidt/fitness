@@ -52,6 +52,30 @@ img {
 	padding-left: var(--site-padding);
 }
 
+/* %secondary-font */
+
+.hero__prelude,
+.overview__img-label,
+.trainer__type,
+.blog-entry__title,
+.plan__name,
+.testimonial__content {
+	font: italic normal 700 24px/1.5 var(--alternate-font-family);
+}
+
+/* %capitalized */
+
+.schedule__daytime,
+.blog-entry__topic,
+.blog-entry__title_affirmative,
+.blog-entry__author a,
+.plan__name,
+.plan__item,
+.testimonial__author,
+.footer__copyright {
+	text-transform: capitalize;
+}
+
 /* hide semantic elements */
 
 .visually-hidden {
@@ -267,7 +291,6 @@ button.button {
 	font-weight: 600;
 	line-height: 1.15;
 	color: #fff;
-	text-transform: capitalize;
 }
 
 .schedule__period {
@@ -531,7 +554,6 @@ h1.logo {
 	margin-top: 0;
 	margin-bottom: 30px;
 
-	font: italic normal 700 24px/1.5 var(--alternate-font-family);
 	letter-spacing: 2px;
 }
 
@@ -579,7 +601,8 @@ h1.logo {
 	margin: 0;
 	padding: 60px 50px;
 
-	font: italic normal 700 20px/1.4 var(--alternate-font-family);
+	font-size: 20px;
+	line-height: 1.4;
 	word-spacing: 1px;
 	letter-spacing: 1px;
 	color: #333;
@@ -683,7 +706,6 @@ h1.logo {
 	margin-top: 0;
 	margin-bottom: 20px;
 
-	font: italic normal 700 24px/1.5 var(--alternate-font-family);
 	letter-spacing: 1px;
 }
 
@@ -784,19 +806,9 @@ h1.logo {
 	color: #999;
 }
 
-.blog-entry__topic {
-	text-transform: capitalize;
-}
-
 .blog-entry__title {
 	margin-top: 0;
 	margin-bottom: 10px;
-
-	font: italic normal 700 24px/1.5 var(--alternate-font-family);
-}
-
-.blog-entry__title_affirmative {
-	text-transform: capitalize;
 }
 
 .blog-entry__link {
@@ -812,10 +824,6 @@ h1.logo {
 	font-weight: 600;
 	line-height: 1.15;
 	letter-spacing: 1px;
-}
-
-.blog-entry__author a {
-	text-transform: capitalize;
 }
 
 /* PLANS */
@@ -868,9 +876,7 @@ h1.logo {
 
 .plan__name {
 	margin: 0;
-
-	font: italic normal 700 40px/1.5 var(--alternate-font-family);
-	text-transform: capitalize;
+	font-size: 40px;
 }
 
 .plan__price-wrapper {
@@ -906,7 +912,6 @@ h1.logo {
 	font-weight: 600;
 	line-height: 1.6;
 	letter-spacing: 0.6px;
-	text-transform: capitalize;
 }
 
 .plan__button-wrapper {
@@ -966,7 +971,6 @@ h1.logo {
 	margin-top: 0;
 	margin-bottom: 20px;
 
-	font: italic normal 700 24px/1.5 var(--alternate-font-family);
 	letter-spacing: 1px;
 }
 
@@ -978,7 +982,6 @@ h1.logo {
 	line-height: 1.15;
 	color: #999;
 	letter-spacing: 2px;
-	text-transform: capitalize;
 }
 
 /* FOOTER */
@@ -1000,7 +1003,6 @@ h1.logo {
 	letter-spacing: 0.4px;
 	color: #707070;
 	text-align: center;
-	text-transform: capitalize;
 }
 
 .footer__link {
