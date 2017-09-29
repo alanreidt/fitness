@@ -158,6 +158,29 @@ img {
 	color: #23527c;
 }
 
+/* COPYRIGHT */
+
+.copyright {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.4px;
+	color: #707070;
+}
+
+.copyright__link {
+	color: inherit;
+	text-decoration: none;
+
+	-webkit-transition: color 0.4s ease-in-out;
+			  transition: color 0.4s ease-in-out;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+	color: #fff;
+}
+
 /* GRID */
 
 :root {
@@ -1007,25 +1030,7 @@ h1.logo {
 	margin-top: 80px;
 	margin-bottom: 0;
 
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 1.5;
-	letter-spacing: 0.4px;
-	color: #707070;
 	text-align: center;
-}
-
-.footer__link {
-	color: inherit;
-	text-decoration: none;
-
-	-webkit-transition: color 0.4s ease-in-out;
-			  transition: color 0.4s ease-in-out;
-}
-
-.footer__link:hover,
-.footer__link:focus {
-	color: #fff;
 }
 
 .footer-schedules {
